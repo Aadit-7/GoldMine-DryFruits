@@ -6,6 +6,7 @@ import Wishlist from "./pages/Wishlist";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import CategoryPage from "./pages/CategoryPage";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Route path="/products" element={<Products />} />
 
       <Route path="/category/:category" element={<Products />} />
+
+      <Route path="/category/:slug" element={<CategoryPage />} />
 
       <Route path="/wishlist" element={<Wishlist />} />
 

@@ -61,13 +61,14 @@ function ProductCard({ product }) {
           src={product.image}
           alt={product.name}
           className="
-            h-full
+            h-72
             w-full
             object-cover
             p-4
             transition
             duration-300
             group-hover:scale-105
+            rounded-xl
           "
         />
       </div>

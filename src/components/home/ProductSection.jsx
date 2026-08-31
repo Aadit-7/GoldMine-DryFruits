@@ -1,7 +1,11 @@
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
-
 import ProductCard from "./ProductCard";
+
+import Almonds from "../../assets/Product-card-Images/Almonds.avif";
+import Cashews from "../../assets/Product-card-Images/Cashew.avif";
+import Pistachios from "../../assets/Product-card-Images/Pista.avif";
+import Walnut from "../../assets/Product-card-Images/wallnuts.avif";
 
 const products = [
   {
@@ -12,8 +16,7 @@ const products = [
     mrp: 399,
     discount: "20% OFF",
     weight: ["250g", "500g"],
-    image:
-      "https://images.unsplash.com/photo-1508061253366-2c1b6f3e0e9c?auto=format&fit=crop&w=600&q=80",
+    image: Almonds,
   },
   {
     id: 2,
@@ -23,8 +26,7 @@ const products = [
     mrp: 450,
     discount: "15% OFF",
     weight: ["250g", "500g"],
-    image:
-      "https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?auto=format&fit=crop&w=600&q=80",
+    image: Cashews,
   },
   {
     id: 3,
@@ -32,8 +34,7 @@ const products = [
     description: "Iranian Origin, Lightly Salted",
     price: 599,
     weight: ["250g"],
-    image:
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=80",
+    image: Pistachios,
   },
   {
     id: 4,
@@ -43,8 +44,7 @@ const products = [
     mrp: 499,
     discount: "25% OFF",
     weight: ["200g"],
-    image:
-      "https://images.unsplash.com/photo-1550028061-5b40c11d4e37?auto=format&fit=crop&w=600&q=80",
+    image: Walnut,
   },
 ];
 
