@@ -110,7 +110,7 @@ function Navbar() {
           </Link>
 
           <Link
-            to="/profile"
+            to="/auth"
             className="hidden md:block text-primary hover:text-secondary-container"
           >
             <User size={21} />
