@@ -1,4 +1,5 @@
 import { Heart, ShoppingCart } from "lucide-react";
+import { Link } from "react-router";
 
 function ProductCard({ product }) {
   return (
@@ -13,18 +14,24 @@ function ProductCard({ product }) {
         <Heart size={18} className="text-text-soft hover:text-error-red" />
       </button>
 
-      <div className="aspect-square overflow-hidden bg-white p-4">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-        />
-      </div>
+      {/* Product Image - Clickable */}
+      <Link to={`/product/${product.id}`} className="block">
+        <div className="aspect-square overflow-hidden bg-white p-4">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          />
+        </div>
+      </Link>
 
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="mb-1 text-base font-semibold text-primary">
-          {product.name}
-        </h3>
+        {/* Product Name - Clickable */}
+        <Link to={`/product/${product.id}`}>
+          <h3 className="mb-1 text-base font-semibold text-primary hover:underline">
+            {product.name}
+          </h3>
+        </Link>
 
         <p className="mb-4 text-sm text-text-soft">{product.description}</p>
 

@@ -1,0 +1,382 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Happilo - Premium Californian Roasted Almonds</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Source+Serif+4:wght@600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c0c8c4",
+                        "surface-sage": "#DCE6D6",
+                        "tertiary-container": "#613a1b",
+                        "on-primary-fixed-variant": "#234e42",
+                        "on-secondary-fixed": "#2a1800",
+                        "surface-container": "#f2ede3",
+                        "surface-dim": "#dedad0",
+                        "error-red": "#B5482F",
+                        "surface": "#fef9ef",
+                        "text-soft": "#5B5548",
+                        "on-primary-fixed": "#002019",
+                        "background": "#fef9ef",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fef9ef",
+                        "inverse-on-surface": "#f5f0e6",
+                        "border-sage": "#C6D5BE",
+                        "on-tertiary-fixed-variant": "#653d1e",
+                        "on-surface": "#1d1c16",
+                        "on-tertiary-container": "#dca57e",
+                        "secondary-fixed-dim": "#ffb956",
+                        "on-secondary-fixed-variant": "#643f00",
+                        "inverse-surface": "#32302a",
+                        "tertiary-fixed": "#ffdcc5",
+                        "primary-container": "#1f4b3f",
+                        "on-primary-container": "#8dbaaa",
+                        "text-ink": "#201D17",
+                        "nav-dark": "#16332A",
+                        "on-surface-variant": "#414845",
+                        "surface-container-high": "#ece8de",
+                        "on-tertiary-fixed": "#301400",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e7e2d8",
+                        "secondary": "#835400",
+                        "surface-container-low": "#f8f3e9",
+                        "inverse-primary": "#a2d0c0",
+                        "on-background": "#1d1c16",
+                        "surface-variant": "#e7e2d8",
+                        "secondary-fixed": "#ffddb5",
+                        "on-secondary-container": "#714800",
+                        "primary-fixed-dim": "#a2d0c0",
+                        "tertiary": "#462507",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#3b6659",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#beecdc",
+                        "tertiary-fixed-dim": "#f4bb92",
+                        "outline": "#717975",
+                        "primary": "#023429",
+                        "secondary-container": "#feb64e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "32px",
+                        "touch-target": "44px",
+                        "gutter-md": "12px",
+                        "base": "8px",
+                        "container-margin": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "headline-lg-mobile": ["\"Source Serif 4\""],
+                        "headline-lg": ["\"Source Serif 4\""],
+                        "price-mrp": ["Inter"],
+                        "title-md": ["Inter"],
+                        "price-lg": ["Inter"],
+                        "display-lg": ["\"Source Serif 4\""]
+                    },
+                    "fontSize": {
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "price-mrp": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "price-lg": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .quality-seal {
+            border: 2px dashed #C6D5BE;
+            box-shadow: inset 0 2px 4px rgba(2, 52, 41, 0.05);
+        }
+        .quality-seal:hover {
+            border-color: #E8A33D; /* Toasted Amber accent on hover */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg min-h-screen flex flex-col">
+<!-- TopNavBar (Shared Component) -->
+<header class="w-full sticky top-0 z-50 bg-surface text-primary border-b border-surface-variant shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-container-margin py-base max-w-[1200px] mx-auto w-full">
+<div class="font-headline-lg text-headline-lg text-primary cursor-pointer">Happilo</div>
+<nav class="hidden md:flex gap-6 items-center flex-1 justify-center ml-8">
+<a class="text-primary font-bold border-b-2 border-secondary font-title-md text-title-md pb-1" href="#">Nuts</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary-container transition-colors font-title-md text-title-md pb-1 cursor-pointer active:scale-95 transition-transform" href="#">Berries</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary-container transition-colors font-title-md text-title-md pb-1 cursor-pointer active:scale-95 transition-transform" href="#">Dates</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary-container transition-colors font-title-md text-title-md pb-1 cursor-pointer active:scale-95 transition-transform" href="#">Seeds</a>
+<a class="text-on-surface-variant hover:text-primary hover:text-secondary-container transition-colors font-title-md text-title-md pb-1 cursor-pointer active:scale-95 transition-transform" href="#">Gifts</a>
+</nav>
+<div class="flex items-center gap-4 text-primary">
+<div class="relative hidden md:flex items-center">
+<span class="material-symbols-outlined absolute left-2 text-on-surface-variant" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="bg-surface-container-low border border-outline-variant rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:border-primary-fixed focus:ring-1 focus:ring-primary-fixed transition-all w-48" placeholder="Search..." type="text">
+</div>
+<button class="material-symbols-outlined hover:text-secondary-container transition-colors cursor-pointer active:scale-95" data-icon="search" style="font-variation-settings: 'FILL' 0;">search</button>
+<button class="material-symbols-outlined hover:text-secondary-container transition-colors cursor-pointer active:scale-95" data-icon="favorite" style="font-variation-settings: 'FILL' 0;">favorite</button>
+<button class="material-symbols-outlined hover:text-secondary-container transition-colors cursor-pointer active:scale-95" data-icon="shopping_cart" style="font-variation-settings: 'FILL' 0;">shopping_cart</button>
+<button class="material-symbols-outlined hover:text-secondary-container transition-colors cursor-pointer active:scale-95 hidden md:block" data-icon="person" style="font-variation-settings: 'FILL' 0;">person</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-[1200px] mx-auto px-container-margin py-section-gap grid grid-cols-1 md:grid-cols-12 gap-section-gap items-start">
+<!-- Left: Image Gallery (Span 7) -->
+<div class="md:col-span-7 flex flex-col md:flex-row-reverse gap-4">
+<!-- Main Large Image -->
+<div class="w-full aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden relative border border-surface-variant flex-1">
+<img alt="Premium Californian Roasted Almonds Main Image" class="w-full h-full object-cover absolute inset-0 mix-blend-multiply opacity-90 transition-opacity duration-500 hover:opacity-100 cursor-zoom-in" data-alt="A meticulously styled close-up macro shot of premium Californian roasted almonds overflowing from a rustic ceramic bowl set on a crisp, light cream linen tablecloth. Soft, diffused natural morning light spills from an off-screen window, highlighting the rich, textured golden-brown surface of the roasted nuts and creating gentle ambient shadows. The mood is warm, organic, and health-focused, embodying a sophisticated, modern minimalist health food aesthetic with a tactile, editorial feel. High key lighting, sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRy6okfexMb5JSXaMb0FWMZWgwnZDNF13UJ0K23aFqzNQo8C-AYrVEpknzuCPI19zf_VHF1GWgZsfEmfUFm7B9PZ0pyzhSejM7lOjzBsA2Eu76YGPp3YHbW4GHLcPSF25Ety-82v7AwlfZL3DX2AFqxYB-UVVYB9_lDLqtx4BSImKMMvsHmq1B7TpGCB5xeNUI8SDwaM4rDgH2u93nvTYldIPO_3SABVuXR2MqZbP0bXaEQ_IcYB_f">
+<!-- Discount Badge Overlay -->
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-label-caps px-3 py-1 rounded-full shadow-md z-10 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_offer</span> 33% OFF
+                 </div>
+</div>
+<!-- Thumbnail Strip -->
+<div class="flex md:flex-col gap-4 overflow-x-auto md:overflow-visible pb-2 md:pb-0 w-full md:w-24 shrink-0 snap-x">
+<button class="w-20 h-24 md:w-24 md:h-32 bg-surface-sage rounded-lg overflow-hidden border-2 border-primary snap-start focus:outline-none shrink-0 relative shadow-sm">
+<img alt="Thumbnail 1" class="w-full h-full object-cover mix-blend-multiply" data-alt="A top-down view of a small handful of perfectly roasted premium almonds scattered artistically on a pristine white marble surface. Warm, bright, and clean studio lighting casts subtle, soft shadows. The overall aesthetic is modern, minimalist, and premium, focusing on the high quality and natural texture of the nuts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJI1_QEmbC7e8KH5ePga2OXk-fGlf9h1rkEiBULZth-FkPFRpqH64XSIcPzqZnR00b51ajqyJg5klN30qsk0-xFHA9SnFa-df9nH6zNFd6RBo7TFiQz0R6Qv6l_hZnfm0Oy8eQopgPk3OD84PS8Hyh7AB_cdd9vKCoeGWta92ImYy4lpX1XXC1u4rqbMpnkQ6orIjZ-4ZU-Nq8yadUIakILLw5MgXXeFBbxvg8R76ghm5pxKUY8xDn">
+</button>
+<button class="w-20 h-24 md:w-24 md:h-32 bg-surface-container rounded-lg overflow-hidden border border-outline-variant hover:border-border-sage transition-colors snap-start focus:outline-none shrink-0 relative opacity-70 hover:opacity-100">
+<img alt="Thumbnail 2" class="w-full h-full object-cover mix-blend-multiply" data-alt="A stylized lifestyle shot of an elegant, minimalist glass jar filled with premium roasted almonds, resting on a light oak wooden board against a soft cream background. A sprig of fresh greenery sits slightly out of focus in the foreground to add an organic touch. Soft, diffused lighting enhances the premium, natural vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO0lQdVixb51sRjd9WsK00KOjN40f0rkNEdlqAJlNpVEZOMBEplLUT1kWZOArXBw8BHyNTbl8ySVYpSdbFU4XoQGofRtdJDMIp0IIFtLw_yLbMs9QaDNIDFecMM7Q7GglcGkrjSnRJBslGYjnVbxWqtZmoU4L0bH0o4vk8oeoN-hvjaCEGnc5xyTVGpVQAbetpYLNXgzy37VVZio8KEnxjOMOsPNIrnKEstJTTRPffGq_FHbbgeJi1">
+</button>
+<button class="w-20 h-24 md:w-24 md:h-32 bg-surface-container rounded-lg overflow-hidden border border-outline-variant hover:border-border-sage transition-colors snap-start focus:outline-none shrink-0 relative opacity-70 hover:opacity-100">
+<img alt="Thumbnail 3" class="w-full h-full object-cover mix-blend-multiply" data-alt="Close-up detail shot focusing on the distinct textured surface and perfect roast level of a single premium Californian almond held gently between two fingers. The background is a clean, blurred warm cream tone to make the subject pop. High-resolution editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkH25lAYnBhE6K_15zPrmHjtMFeX4QapFISL6wdE_F-gkL9aZVV4O4rjOnM4Fy-jNbs91wIrj3i1mxXLbFdtJidztXEn8Lj3qFsOY1F4zlPyqc62LzlLPXYUVsFmjvKspLQtHd9nVdvoCH6kIZtPObjfg6g1bkR2MWvTIoxoEb_pwo7M6JUeYProOY29U9k0JQ7KXIN4MmaOfv7zdBrbcSIe46xlMyql3T5IDFLfgoxfbPtP3JQ3eR">
+</button>
+<button class="w-20 h-24 md:w-24 md:h-32 bg-surface-container rounded-lg overflow-hidden border border-outline-variant hover:border-border-sage transition-colors snap-start focus:outline-none shrink-0 relative opacity-70 hover:opacity-100">
+<img alt="Thumbnail 4" class="w-full h-full object-cover mix-blend-multiply" data-alt="An infographic-style photograph showing a small mound of premium roasted almonds next to a vintage brass nutritional scale on a light beige background. The scene is brightly lit with a clean, clinical yet warm aesthetic to emphasize health benefits and premium sourcing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXTs1A0-ofxRwFIDYz0SFhGMrt_CkACZD7q-XJ8HZ4iToKZgEoXsQXvPIUTnRifWmOG6Ygpeg5lZiGw3aJyt46iMH-JQbAEzzhPo2SMghyEVgn8P7GDrNXmappkP1m9B5MQOwgeixVA8i7obUxzcjX9G5E7z8YVoRbM3Pjs4RFkF8qKiYvzAiOh6pxdxq4hhlAtnOFyOCHwfbxfqV3-EH72xh_3-kkDLeHYz4JMfkU71kVpasvx8mE">
+</button>
+</div>
+</div>
+<!-- Right: Sticky Buy Box (Span 5) -->
+<div class="md:col-span-5 flex flex-col gap-6 md:sticky md:top-24">
+<!-- Header Section -->
+<div class="flex flex-col gap-2 border-b border-surface-variant pb-6">
+<span class="font-label-caps text-label-caps tracking-widest text-text-soft uppercase">Happilo Premium</span>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-ink leading-tight">Premium Californian Roasted Almonds</h1>
+<!-- Ratings -->
+<div class="flex items-center gap-2 mt-1">
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<a class="font-body-sm text-body-sm text-primary underline hover:text-secondary transition-colors" href="#reviews">(1,284 Reviews)</a>
+</div>
+</div>
+<!-- Price Section -->
+<div class="flex items-baseline gap-3">
+<span class="font-price-lg text-price-lg text-text-ink">₹499.00</span>
+<span class="font-price-mrp text-price-mrp text-outline line-through">₹750.00</span>
+<span class="font-label-caps text-label-caps text-primary bg-primary-fixed-dim/20 px-2 py-1 rounded-md ml-auto">Inclusive of all taxes</span>
+</div>
+<!-- Weight Selector (Chips) -->
+<div class="flex flex-col gap-3">
+<span class="font-title-md text-title-md text-text-ink">Select Weight</span>
+<div class="flex flex-wrap gap-3">
+<button class="px-5 py-2 rounded-full border border-outline-variant font-body-sm text-body-sm text-on-surface-variant hover:border-primary transition-all focus:outline-none min-h-[touch-target]">100g</button>
+<button class="px-5 py-2 rounded-full border border-primary bg-primary text-on-primary font-body-sm text-body-sm shadow-sm transition-all focus:outline-none min-h-[touch-target]">200g</button>
+<button class="px-5 py-2 rounded-full border border-outline-variant font-body-sm text-body-sm text-on-surface-variant hover:border-primary transition-all focus:outline-none min-h-[touch-target]">500g</button>
+<button class="px-5 py-2 rounded-full border border-outline-variant font-body-sm text-body-sm text-on-surface-variant hover:border-primary transition-all focus:outline-none min-h-[touch-target]">1kg</button>
+</div>
+</div>
+<!-- Action Buttons (Stepper & Add to Cart) -->
+<div class="flex gap-4 mt-2">
+<!-- Quantity Stepper -->
+<div class="flex items-center justify-between border border-outline-variant rounded-lg bg-surface-container-lowest w-32 h-[44px] overflow-hidden">
+<button aria-label="Decrease quantity" class="w-10 h-full flex items-center justify-center text-text-soft hover:bg-surface-container transition-colors focus:outline-none active:bg-surface-variant">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<span class="font-body-lg text-body-lg text-text-ink font-semibold">1</span>
+<button aria-label="Increase quantity" class="w-10 h-full flex items-center justify-center text-text-soft hover:bg-surface-container transition-colors focus:outline-none active:bg-surface-variant">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+<!-- Primary Add to Cart -->
+<button class="flex-1 bg-secondary-container text-text-ink font-title-md text-title-md rounded-lg h-[44px] shadow-sm hover:brightness-105 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+                    Add to Cart
+                </button>
+</div>
+<button class="w-full flex items-center justify-center gap-2 py-3 border border-primary text-primary font-title-md text-title-md rounded-lg h-[44px] hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">favorite_border</span>
+                Add to Wishlist
+            </button>
+<!-- Quality Seals (Row of 4) -->
+<div class="flex justify-between items-center mt-6 py-6 border-t border-surface-variant">
+<div class="flex flex-col items-center gap-2 group cursor-help">
+<div class="w-14 h-14 rounded-full quality-seal bg-surface-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:scale-110 transition-transform">eco</span>
+</div>
+<span class="font-label-caps text-label-caps text-text-soft text-center w-16 leading-tight">100%<br>Natural</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-help">
+<div class="w-14 h-14 rounded-full quality-seal bg-surface-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:scale-110 transition-transform">grain</span>
+</div>
+<span class="font-label-caps text-label-caps text-text-soft text-center w-16 leading-tight">Gluten<br>Free</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-help">
+<div class="w-14 h-14 rounded-full quality-seal bg-surface-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:scale-110 transition-transform">verified</span>
+</div>
+<span class="font-label-caps text-label-caps text-text-soft text-center w-16 leading-tight">Premium<br>Sourced</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-help">
+<div class="w-14 h-14 rounded-full quality-seal bg-surface-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:scale-110 transition-transform">favorite</span>
+</div>
+<span class="font-label-caps text-label-caps text-text-soft text-center w-16 leading-tight">Heart<br>Healthy</span>
+</div>
+</div>
+<!-- Accordion Details (Below Fold on Mobile, Sticky continuation on Desktop) -->
+<div class="flex flex-col gap-0 border-t border-surface-variant mt-2">
+<!-- Product Details Accordion -->
+<details class="group border-b border-surface-variant" open="">
+<summary class="flex justify-between items-center py-4 cursor-pointer list-none font-title-md text-title-md text-text-ink hover:text-primary transition-colors focus:outline-none">
+                        Product Details
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="pb-4 font-body-sm text-body-sm text-text-soft leading-relaxed text-balance">
+<p>Experience the crunch of our premium, hand-picked Californian almonds. Slowly dry-roasted to perfection without a single drop of oil, these nuts retain their natural goodness while developing a rich, deeply satisfying flavor profile. Packed with essential nutrients, they are the perfect guilt-free snack to fuel your active lifestyle.</p>
+<ul class="list-disc pl-5 mt-2 space-y-1">
+<li>Zero Cholesterol &amp; Trans Fat</li>
+<li>High in Dietary Fiber</li>
+<li>Rich source of Antioxidants &amp; Vitamin E</li>
+</ul>
+</div>
+</details>
+<!-- Nutrition & Ingredients Accordion -->
+<details class="group border-b border-surface-variant">
+<summary class="flex justify-between items-center py-4 cursor-pointer list-none font-title-md text-title-md text-text-ink hover:text-primary transition-colors focus:outline-none">
+                        Nutrition &amp; Ingredients
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="pb-4 font-body-sm text-body-sm text-text-soft leading-relaxed">
+<p class="font-semibold mb-2">Ingredients: 100% Californian Almonds.</p>
+<div class="bg-surface-container-low p-4 rounded-lg border border-outline-variant mt-3">
+<h4 class="font-label-caps text-label-caps mb-2 text-text-ink">Nutritional Value (per 100g)</h4>
+<div class="grid grid-cols-2 gap-2 text-sm">
+<div class="flex justify-between border-b border-surface-variant pb-1"><span>Energy</span> <span class="font-semibold">579 kcal</span></div>
+<div class="flex justify-between border-b border-surface-variant pb-1"><span>Protein</span> <span class="font-semibold">21.15g</span></div>
+<div class="flex justify-between border-b border-surface-variant pb-1"><span>Carbohydrates</span> <span class="font-semibold">21.55g</span></div>
+<div class="flex justify-between border-b border-surface-variant pb-1"><span>Dietary Fiber</span> <span class="font-semibold">12.50g</span></div>
+<div class="flex justify-between pb-1"><span>Total Fat</span> <span class="font-semibold">49.93g</span></div>
+</div>
+</div>
+</div>
+</details>
+<!-- Reviews Accordion -->
+<details class="group" id="reviews">
+<summary class="flex justify-between items-center py-4 cursor-pointer list-none font-title-md text-title-md text-text-ink hover:text-primary transition-colors focus:outline-none">
+                        Customer Reviews (1,284)
+                        <span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div class="pb-4 pt-2">
+<!-- Single Review Sample -->
+<div class="flex flex-col gap-2 mb-4 bg-surface-container-lowest p-4 rounded-lg border border-surface-variant shadow-sm">
+<div class="flex justify-between items-start">
+<div>
+<h5 class="font-body-sm font-semibold text-text-ink">Excellent Quality!</h5>
+<div class="flex text-secondary-container mt-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-outline">Oct 12, 2023</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-soft mt-1">Always fresh and crunchy. I've been buying these for months and the quality is consistently top-notch. Highly recommend for a healthy snack.</p>
+<span class="font-label-caps text-label-caps text-primary mt-2 flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">verified_user</span> Verified Buyer</span>
+</div>
+<button class="text-primary font-body-sm text-body-sm underline font-semibold w-full text-center hover:text-secondary py-2">View all reviews</button>
+</div>
+</details>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full mt-section-gap bg-primary text-on-primary border-t border-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-section-gap px-container-margin py-12 max-w-[1200px] mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed">Happilo</span>
+<p class="font-body-sm text-body-sm text-on-primary/80 max-w-xs">The Art of Snacking. Bringing you the finest nuts, berries, and healthy treats sourced from around the globe.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-title-md text-title-md text-secondary-fixed-dim mb-2">Explore</h4>
+<a class="font-body-sm text-body-sm text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Brand Story</a>
+<a class="font-body-sm text-body-sm text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Wholesale</a>
+<a class="font-body-sm text-body-sm text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-title-md text-title-md text-secondary-fixed-dim mb-2">Customer Care</h4>
+<a class="font-body-sm text-body-sm text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Contact Us</a>
+<a class="font-body-sm text-body-sm text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-primary/80 hover:text-on-primary hover:underline transition-all" href="#">Shipping &amp; Returns</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-title-md text-title-md text-secondary-fixed-dim mb-2">Connect</h4>
+<div class="flex gap-4">
+<!-- Placeholder social icons -->
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-tint flex items-center justify-center text-on-primary hover:bg-secondary-container hover:text-text-ink transition-colors cursor-pointer" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a aria-label="Facebook" class="w-10 h-10 rounded-full bg-surface-tint flex items-center justify-center text-on-primary hover:bg-secondary-container hover:text-text-ink transition-colors cursor-pointer" href="#">
+<span class="material-symbols-outlined">thumb_up</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-surface-tint py-4 text-center">
+<p class="font-body-sm text-body-sm text-on-primary/60">© 2024 Happilo International. The Art of Snacking.</p>
+</div>
+</footer>
+<!-- Sticky Mobile Add to Cart (Appears only on small screens) -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-surface border-t border-surface-variant p-container-margin shadow-[0_-4px_12px_rgba(2,52,41,0.05)] z-40 flex gap-4 items-center">
+<div class="flex flex-col">
+<span class="font-price-lg text-price-lg text-text-ink leading-none">₹499.00</span>
+<span class="font-label-caps text-label-caps text-outline">200g</span>
+</div>
+<button class="flex-1 bg-secondary-container text-text-ink font-title-md text-title-md rounded-lg h-[44px] shadow-sm hover:brightness-105 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+            Add
+        </button>
+</div>
+<!-- Script to handle accordion exclusive open behavior (optional enhancement) -->
+<script>
+        // Simple script to make details act like an accordion (only one open at a time)
+        const details = document.querySelectorAll('details');
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener('click', () => {
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>
